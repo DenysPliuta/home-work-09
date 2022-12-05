@@ -35,6 +35,11 @@
 	background-color: var(--color-mdl-window);
 
 	transition: transform 300ms ease, opacity 300ms ease;
+
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+		height: 581px;
+	}
 }
 
 .backdrop.is-hidden .modal {
@@ -72,11 +77,15 @@
 	margin-bottom: 12px;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: calc(23 / 20);
+	line-height: calc(30 / 20);
 	text-align: center;
 	letter-spacing: 0.03em;
 
 	color: #212121;
+
+	@media screen and (min-width: 1200px) {
+		line-height: calc(23 / 20);
+	}
 }
 
 .modal__form-group {
@@ -151,11 +160,17 @@
 	align-items: center;
 	margin-bottom: 30px;
 	gap: 8px;
-	line-height: calc(24 / 14);
+	font-size: 12px;
+	line-height: calc(14 / 12);
 	letter-spacing: 0.03em;
 	user-select: none;
 
 	color: #757575;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: calc(24 / 14);
+	}
 }
 
 .uncheck {
@@ -183,12 +198,18 @@
 }
 
 .modal__checkbox-link {
-	line-height: calc(24 / 14);
+	font-size: 12px;
+	line-height: calc(14 / 12);
 	letter-spacing: 0.03em;
 	text-decoration-line: underline;
 	text-underline-offset: 3px;
 
 	color: #2196f3;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: calc(24 / 14);
+	}
 }
 
 .modal__form-btn {
