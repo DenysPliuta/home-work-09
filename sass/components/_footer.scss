@@ -1,58 +1,74 @@
 .logo-footer {
-    display: inline-block;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+	margin-bottom: 20px;
 
-    color: var(--text-color-third);
+	color: var(--text-color-third);
 }
 
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--background-hero-footer);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: var(--background-hero-footer);
 }
 
 .footer__address {
-    font-style: normal;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    margin-bottom: 9px;
+	font-style: normal;
+	line-height: calc(24 / 14);
+	letter-spacing: 0.03em;
+	margin-bottom: 9px;
 
-    color: var(--text-color-third);
+	color: var(--text-color-third);
 
-    transition: color var(--anim-main);
+	transition: color var(--anim-main);
 }
 
 .link.footer__contact {
-    font-style: normal;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+	font-style: normal;
+	line-height: calc(24 / 14);
+	letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 9px;
 
-    transition: color var(--anim-main);
+	transition: color var(--anim-main);
 }
 
 [footer__contact*="096"] {
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .link.footer__contact:hover,
 .link.footer__contact:focus {
-    color: var(--color-accent);
+	color: var(--color-accent);
 }
 
 .footer__address:hover,
 .footer__address:focus {
-    color: var(--color-accent);
+	color: var(--color-accent);
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+	display: flex;
+	align-items: baseline;
+
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 60px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-wrap: wrap;
+		column-gap: 165px;
+		row-gap: 60px;
+		align-items: baseline;
+		justify-content: center;
+	}
 }

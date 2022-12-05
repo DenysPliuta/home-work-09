@@ -1,49 +1,67 @@
 .hero {
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: 0 auto;
-    text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-img.jpg);
-    background-color: var(--background-hero-footer);
+	max-width: 480px;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	margin: 0 auto;
+	text-align: center;
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/hero-img.jpg);
+	background-color: var(--background-hero-footer);
+
+	@media screen and (min-width: 768px) {
+		max-width: 768px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 1600px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
 }
 
 .hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: calc(42 / 26);
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 
-    color: var(--text-color-third);
+	color: var(--text-color-third);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: calc(60 / 44);
+		width: 696px;
+	}
 }
 
 .hero__btn {
-    background-color: var(--color-accent);
-    border: 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    text-align: center;
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 217px;
+	background-color: var(--color-accent);
+	border: 0;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: calc(30 / 16);
+	text-align: center;
+	letter-spacing: 0.06em;
+	padding: 10px 32px;
+	border-radius: 4px;
+	min-width: 217px;
 
-    color: var(--text-color-third);
+	color: var(--text-color-third);
 
-    transition: color var(--anim-main);
+	transition: color var(--anim-main);
 }
 
 .hero__btn:hover,
 .hero__btn:focus {
-    cursor: pointer;
-    background-color: var(--hero-btn-active-color);
+	cursor: pointer;
+	background-color: var(--hero-btn-active-color);
 }
